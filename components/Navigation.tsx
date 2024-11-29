@@ -9,13 +9,13 @@ const Navigation = () => {
                         <Link href="/">Dashboard</Link>
                     </li>
                     <li>
-                        <Link href="/about">Charts</Link>
+                        <Link href="/charts">Charts</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Data Insights</Link>
+                        <Link href="/insights">Data Insights</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Table</Link>
+                        <Link href="/table">Table</Link>
                     </li>
                 </ul>
             </div>
