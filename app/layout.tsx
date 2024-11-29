@@ -1,9 +1,8 @@
 import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import {Provider as UIProvider} from "@/components/ui/provider";
-import {QueryClient, QueryClientProvider} from "react-query";
 import React from "react";
+import ClientProviders from "@/components/ClientProviders";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -23,9 +22,6 @@ export const metadata: Metadata = {
     description: "An interactive dashboard to visualize key business metrics.",
 };
 
-// Initialize React Query Client
-const queryClient = new QueryClient();
-
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
@@ -34,9 +30,7 @@ export default function RootLayout({
     return (
         <html suppressHydrationWarning lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <QueryClientProvider client={queryClient}>
-            <UIProvider>{children}</UIProvider>
-        </QueryClientProvider>
+        <ClientProviders>{children}</ClientProviders>
         </body>
         </html>
     );

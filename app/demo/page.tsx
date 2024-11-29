@@ -1,4 +1,5 @@
-import {Mark, Stack} from "@chakra-ui/react"
+'use client'
+import {Stack} from "@chakra-ui/react"
 import {Alert} from "@/components/ui/alert"
 import React from "react";
 
