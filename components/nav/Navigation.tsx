@@ -6,7 +6,7 @@ const Navigation = () => {
             <div className="container mx-auto px-4 py-6">
                 <ul className="flex space-x-4">
                     <li>
-                        <Link href="/">Dashboard</Link>
+                        <Link href="/public">Dashboard</Link>
                     </li>
                     <li>
                         <Link href="/charts">Charts</Link>
