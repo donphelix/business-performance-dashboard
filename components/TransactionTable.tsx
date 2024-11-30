@@ -1,4 +1,5 @@
 import {Table, Thead, Tbody, Tr, Th, Td} from "@chakra-ui/react";
+import React from "react";
 
 const TransactionTable = ({transactions}: { transactions: any[] }) => (
     <Table variant="striped" colorScheme="teal">
